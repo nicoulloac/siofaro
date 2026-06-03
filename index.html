@@ -34,6 +34,7 @@ button{font-family:inherit;cursor:pointer;border:none;border-radius:10px}
 .p-body{padding:24px 26px 28px}
 label{display:block;font-weight:700;color:var(--navy);font-size:14px;margin:0 0 6px}
 .hint{font-weight:400;color:var(--muted);font-size:12px}
+.one-note{background:#FBF4DE;border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:11px 13px;font-size:13px;line-height:1.4;color:var(--navy);margin:-2px 0 16px}
 input,textarea{width:100%;border:2px solid #E3E7EF;border-radius:12px;padding:13px 14px;font-family:inherit;font-size:16px;color:var(--ink);transition:border-color .15s}
 input:focus,textarea:focus{outline:none;border-color:var(--gold)}
 textarea{min-height:104px;resize:vertical}
@@ -137,9 +138,10 @@ textarea{min-height:104px;resize:vertical}
         <input id="pname" type="text" placeholder="Anónimo" maxlength="40" autocomplete="off">
       </div>
       <div class="field">
-        <label>Tu caso de uso o idea</label>
+        <label>Tu caso de uso o idea <span class="hint" style="color:var(--danger);font-weight:700">— envía de a uno</span></label>
         <textarea id="pidea" placeholder="Ej.: automatizar minutas de reuniones, generar borradores de propuestas, control de calidad de entregables…" maxlength="280"></textarea>
       </div>
+      <div class="one-note">✋ Envía <b>un caso de uso a la vez</b>. Si tienes varios, mándalos por separado (uno, Enviar, y repites).</div>
       <button class="send" id="sendBtn">Enviar</button>
       <div class="sent-row">Casos de uso enviados: <b id="myCount">0</b> · puedes proponer los que quieras</div>
     </div>
